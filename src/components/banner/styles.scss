@@ -11,19 +11,20 @@
         flex-wrap: wrap;
     }
     .content-inner {
-        width: 60%;
+        width: 100%;
         position: relative;
-        padding-top: 95px;
+        padding: 140px 470px;
+        text-align: center;
         @include desktop-1400 {
             width: 100%;
             padding-top: 0;
         }
         .heading {
-            color: var(--primary-color5);
+            color: var(--primary-color4);
             max-width: 627px;
             position: relative;
             z-index: 2;
-            margin-bottom: 23px;
+            margin-bottom: 10px;
             span {
                 color: #fff;
                 position: relative;
@@ -38,8 +39,9 @@
         }
         .sub-heading {
             max-width: 627px;
-            color: var(--primary-color8);
-            font-size: 20px;
+            color: var(--primary-color4);
+            font-size: 15.5px;
+            font-weight: 700;
             line-height: 26px;
             margin-bottom: 57px;
         }

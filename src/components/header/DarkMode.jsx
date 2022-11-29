@@ -34,17 +34,17 @@ const DarkMode = () => {
     }
     return (
         <div className="mode-switcher">
-            <Link className='sun mode-switch' to="#" 
+            <Link className='sun mode-switch' to="#"
                 onClick={e => switchTheme(e)}  >
                 <img src={imgsun} alt="" />
             </Link>
-            <Link className='moon mode-switch' to="#" 
+            {/* <Link className='moon mode-switch' to="#" 
                 onClick={e => switchTheme(e)}  >
                 <img src={imgmoon} alt="" />
-            </Link>
+            </Link> */}
 
         </div>
-    
+
     );
 }
 

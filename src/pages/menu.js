@@ -1,16 +1,16 @@
 const menus = [
-  {
-    id: 1,
-    name: "Home",
-    links: "/",
-    // namesub: [
-    //   {
-    //     id: 1,
-    //     sub: "Home 01",
-    //     links: "/",
-    //   },
-    // ],
-  },
+  // {
+  //   id: 1,
+  //   name: "Home",
+  //   links: "/",
+  //   // namesub: [
+  //   //   {
+  //   //     id: 1,
+  //   //     sub: "Home 01",
+  //   //     links: "/",
+  //   //   },
+  //   // ],
+  // },
   {
     id: 2,
     name: "Explore",

@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import CardModal from '../layouts/CardModal';
@@ -9,94 +9,94 @@ import { Dropdown } from 'react-bootstrap';
 
 
 Explore2.propTypes = {
-    data : PropTypes.array,
+    data: PropTypes.array,
 };
 
 function Explore2(props) {
 
-    const {data} = props;
+    const { data } = props;
 
     const [modalShow, setModalShow] = useState(false);
 
     const [dataTab] = useState([
-        {
-            id: 1,
-            title: '3D MODEL',
-            item: 0,
-        },
+        // {
+        //     id: 1,
+        //     title: '3D MODEL',
+        //     item: 0,
+        // },
         {
             id: 2,
-            title: 'ANIME/MANGA',
-            item: 4,
+            title: 'VETERANS',
+            item: 3,
         },
         {
             id: 3,
-            title: 'CYBER PUNK',
-            item: 2,
-        },
-        {
-            id: 4,
-            title: 'PIXEL ART',
-            item: 6,
-        },
-        {
-            id: 5,
-            title: 'MUSIC',
-            item: 7,
-        },
-        {
-            id: 6,
-            title: 'ABSTRACT',
+            title: 'LEGION',
             item: 1,
         },
-        {
-            id: 7,
-            title: '2D ARTS',
-            item: 3,
-        },
+        // {
+        //     id: 4,
+        //     title: 'PIXEL ART',
+        //     item: 4,
+        // },
+        // {
+        //     id: 5,
+        //     title: 'MUSIC',
+        //     item: 2,
+        // },
+        // {
+        //     id: 6,
+        //     title: 'ABSTRACT',
+        //     item: 1,
+        // },
+        // {
+        //     id: 7,
+        //     title: 'MIGHTY',
+        //     item: 3,
+        // },
 
     ]);
     return (
         <section className="tf-section tf-explore tf-filter tf-center">
-                <div className="tf-container">
-                    <div className="row ">
-                        <div className="col-md-12">
-                            <div className="tf-heading style-2 wow fadeInUp">
-                                <h4 className="heading">Explore</h4>
-                            </div>
+            <div className="tf-container">
+                <div className="row ">
+                    <div className="col-md-12">
+                        <div className="tf-heading style-2 wow fadeInUp">
+                            <h4 className="heading">Explore</h4>
                         </div>
-                        <div className="col-md-12">
+                    </div>
+                    <div className="col-md-12">
                         <Tabs>
-                        <div className="d-flex justify-content-between mb-wr">
-                            <TabList>
-                                {
-                                    dataTab.map(idx => (
-                                        <Tab key={idx.id}>{idx.title}</Tab>
-                                    ))
-                                }
-                                
-                            </TabList>
+                            <div className="d-flex justify-content-between mb-wr">
+                                <TabList>
+                                    {
+                                        dataTab.map(idx => (
+                                            <Tab key={idx.id}>{idx.title}</Tab>
+                                        ))
+                                    }
 
-                            <Dropdown>
+                                </TabList>
+
+                                <Dropdown>
                                     <Dropdown.Toggle id="dropdown-basic" className=''>
-                                        Recently create    
+                                        Recently create
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                    <Dropdown.Item href="#">
-                                        <li><span>Recently Listed</span></li>
-                                    </Dropdown.Item>
-                                    <Dropdown.Item href="#">
-                                        <li className="active"><span>Recently Created</span></li>
-                                    </Dropdown.Item>
-                                    <Dropdown.Item href="#">
-                                        <li><span>Recently Sold</span></li>
-                                    </Dropdown.Item>
-                                    
+                                        <Dropdown.Item href="#">
+                                            <li><span>Recently Listed</span></li>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="#">
+                                            <li className="active"><span>Recently Created</span></li>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="#">
+                                            <li><span>Recently Sold</span></li>
+                                        </Dropdown.Item>
+
                                     </Dropdown.Menu>
-                            </Dropdown>
-                        </div>
-                            
+                                </Dropdown>
+                            </div>
+
 
 
                             {
@@ -131,29 +131,29 @@ function Explore2(props) {
                                                     </div>
                                                 ))
                                             }
-                                        
+
                                         </div>
                                     </TabPanel>
                                 ))
                             }
-                            
 
-                        </Tabs> 
-                        </div>
-                        <div className="col-md-12">
-                            <div className="btn-loadmore mt8 wow fadeInUp">
-                                <Link to="/explore-v1" className="tf-button loadmore style-4">Load more</Link>
-                            </div>
+
+                        </Tabs>
+                    </div>
+                    <div className="col-md-12">
+                        <div className="btn-loadmore mt8 wow fadeInUp">
+                            <Link to="/explore-v1" className="tf-button loadmore style-4">Load more</Link>
                         </div>
                     </div>
-
-
                 </div>
 
-                <CardModal 
-                    show={modalShow}
-                    onHide={() => setModalShow(false)} 
-                />
+
+            </div>
+
+            <CardModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
         </section>
     );
 }

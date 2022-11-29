@@ -123,14 +123,14 @@ function Footer(props) {
                   alt="Binasea"
                 />
               </div>
-              <p className="content">
-                블카데미 주식회사 <br /> 대표이사 이강민 서울특별시 서초구
+              {/* <p className="content">
+                주식회사 블카데미 <br /> 대표이사 이강민 서울특별시 서초구
                 서초동 1316-5, <br />
                 부띠크모나코 A동 510호 E-mail
                 <br />
                 metakongz@mekongzlab.com <br />
                 사업자번호 289-81-02177
-              </p>
+              </p> */}
               <ul className="social-item">
                 <li>
                   <Link to="#">
@@ -164,7 +164,7 @@ function Footer(props) {
                 </li>
               </ul>
               <p className="copy-right">
-                Copyright © 2022 Themesflat. All Rights Reserved.
+                Copyright © 2022 BLCADEMY. <br />All Rights Reserved.
               </p>
             </div>
           </div>
@@ -173,8 +173,8 @@ function Footer(props) {
               <div className="menu menu-2">
                 <h6 className="widget-title">이용</h6>
                 <ul>
-                
-            
+
+
                   <li>
                     <Link to="/login">로그인</Link>
                   </li>

@@ -11,6 +11,7 @@ import Page404 from './pages/404';
 import '../src/assets/binasea.css';
 import '../src/assets/font-awesome.css';
 
+
 function App() {
 
     useEffect(() => {

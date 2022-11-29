@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './style.scss';
@@ -7,67 +7,67 @@ import { Dropdown } from 'react-bootstrap';
 
 import icon1 from '../../assets/images/icon/rain1.svg'
 import icon2 from '../../assets/images/icon/rain2.svg'
-import icon3 from '../../assets/images/icon/ethe.svg'
+import icon3 from '../../assets/images/icon/ethe.png'
 import { Link } from 'react-router-dom';
 
 HotPick.propTypes = {
-    data : PropTypes.array,
+    data: PropTypes.array,
 };
 
 function HotPick(props) {
 
     const [modalShow, setModalShow] = useState(false);
-    const {data} = props;
+    const { data } = props;
 
     const [dataTab] = useState([
-        {
-            id: 1,
-            title: '3D MODEL',
-            item: 0,
-        },
+        // {
+        //     id: 1,
+        //     title: '3D MODEL',
+        //     item: 0,
+        // },
         {
             id: 2,
-            title: 'ANIME/MANGA',
-            item: 4,
+            title: 'VETERANS',
+            item: 3,
         },
         {
             id: 3,
-            title: 'CYBER PUNK',
-            item: 5,
-        },
-        {
-            id: 4,
-            title: 'PIXEL ART',
+            title: 'LEGION',
             item: 1,
         },
-        {
-            id: 5,
-            title: 'MUSIC',
-            item: 3,
-        },
-        {
-            id: 6,
-            title: 'ABSTRACT',
-            item: 7,
-        },
-        {
-            id: 7,
-            title: '2D ARTS',
-            item: 3,
-        },
+        // {
+        //     id: 4,
+        //     title: 'PIXEL ART',
+        //     item: 4,
+        // },
+        // {
+        //     id: 5,
+        //     title: 'MUSIC',
+        //     item: 2,
+        // },
+        // {
+        //     id: 6,
+        //     title: 'ABSTRACT',
+        //     item: 1,
+        // },
+        // {
+        //     id: 7,
+        //     title: 'MIGHTY',
+        //     item: 3,
+        // },
 
     ]);
 
     return (
         <section className="tf-section tf-hot-pick tf-filter">
-                <div className="tf-container">
-                    <div className="row ">
-                        <div className="col-md-12">
-                            <div className="tf-heading mb32 wow fadeInUp">
-                                <h4 className="heading">Hot Picks</h4>
-                            </div>
+            <div className="tf-container">
+                <div className="row ">
+                    <div className="col-md-12">
+                        <div className="tf-heading mb32 wow fadeInUp">
+                            <h4 className="heading">Hot Picks</h4>
                         </div>
-                        <div className="col-md-12">
+                    </div>
+                    <div className="col-md-12">
                         <Tabs>
                             <div className="d-flex justify-content-between mb-wr">
                                 <TabList>
@@ -76,27 +76,27 @@ function HotPick(props) {
                                             <Tab key={idx.id}>{idx.title}</Tab>
                                         ))
                                     }
-                                    
+
                                 </TabList>
                                 <Dropdown>
                                     <Dropdown.Toggle id="dropdown-basic" className=''>
-                                        Recently create    
+                                        Recently create
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                    <Dropdown.Item href="#">
-                                        <li><span>Recently Listed</span></li>
-                                    </Dropdown.Item>
-                                    <Dropdown.Item href="#">
-                                        <li className="active"><span>Recently Created</span></li>
-                                    </Dropdown.Item>
-                                    <Dropdown.Item href="#">
-                                        <li><span>Recently Sold</span></li>
-                                    </Dropdown.Item>
-                                    
+                                        <Dropdown.Item href="#">
+                                            <li><span>Recently Listed</span></li>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="#">
+                                            <li className="active"><span>Recently Created</span></li>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="#">
+                                            <li><span>Recently Sold</span></li>
+                                        </Dropdown.Item>
+
                                     </Dropdown.Menu>
                                 </Dropdown>
-        
+
                             </div>
 
 
@@ -138,7 +138,7 @@ function HotPick(props) {
                                                                 <div className="price">
                                                                     <div className="icon"><img src={icon3} alt="images" /></div>
                                                                     <div className="content">
-                                                                        <div className="name">ETH</div>
+                                                                        <div className="name">BNB</div>
                                                                         <div className="cash">{idx.price}</div>
                                                                     </div>
                                                                 </div>
@@ -151,29 +151,29 @@ function HotPick(props) {
                                                     </div>
                                                 ))
                                             }
-                                        
+
                                         </div>
                                     </TabPanel>
                                 ))
                             }
-                            
 
-                        </Tabs> 
-              
-                        </div>
+
+                        </Tabs>
 
                     </div>
 
-                    <div className="col-md-12">
-                        <div className="btn-loadmore mt17 wow fadeInUp">
-                            <Link to="/explore-v1" className="tf-button loadmore style-4">Load more</Link>
-                        </div>
-                    </div>
                 </div>
 
-                <CardModal 
+                <div className="col-md-12">
+                    <div className="btn-loadmore mt17 wow fadeInUp">
+                        <Link to="/explore-v1" className="tf-button loadmore style-4">Load more</Link>
+                    </div>
+                </div>
+            </div>
+
+            <CardModal
                 show={modalShow}
-                onHide={() => setModalShow(false)} 
+                onHide={() => setModalShow(false)}
             />
         </section>
     );
