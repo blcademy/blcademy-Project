@@ -5,7 +5,7 @@ import Create from "./Create";
 import Dashboard from "./Dashboard";
 import Explore01 from "./Explore01";
 import Faqs from "./Faqs";
-import HelpCenter from "./HelpCenter";
+// import HelpCenter from "./HelpCenter";
 import Home01 from "./Home01";
 import Login from "./Login";
 
@@ -19,7 +19,7 @@ const routes = [
   { path: '/explore-v1', component: <Explore01 />},
 
   { path: '/dashboard', component: <Dashboard />},
-  { path: '/help-center', component: <HelpCenter />},
+  // { path: '/help-center', component: <HelpCenter />},
   { path: '/faqs', component: <Faqs />},
   { path: '/wallet', component: <Wallet />},
   { path: '/login', component: <Login />},

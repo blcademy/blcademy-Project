@@ -5,14 +5,14 @@ import avt1 from '../assets/images/author/author-login-1.png'
 import avt2 from '../assets/images/author/author-login-2.png'
 
 Login.propTypes = {
-    
+
 };
 
 function Login(props) {
     return (
         <div>
 
-<section className="tf-page-title style-2">    
+            <section className="tf-page-title style-2">
                 <div className="tf-container">
                     <div className="row">
                         <div className="col-md-12">
@@ -21,19 +21,19 @@ function Login(props) {
                                 <li><Link to="/blog-v2">Home</Link></li>
                                 <li>Login</li>
                             </ul>
-                   
+
                         </div>
                     </div>
-                </div>                    
+                </div>
             </section>
-                
+
             <section className="tf-login">
                 <div className="tf-container">
                     <div className="row justify-content-center">
                         <div className="col-md-12">
                             <div className="tf-heading style-5">
-                                <h4 className="heading">회원가입하셔서 블록체인을 공부해요</h4>
-                                <p className="sub-heading"> 블록체인공부 </p>
+                                <h4 className="heading">블록체인 CRYPTOPIA 진입하기</h4>
+                                <p className="sub-heading"> LOG IN! </p>
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-8 col-md-12">
@@ -58,12 +58,12 @@ function Login(props) {
                                     <h6 className="name">Add account</h6>
                                 </div>
                             </div>
-                            
+
                             <form action="#" id="contactform">
                                 <div className="title-login">Or login with account</div>
                                 <fieldset><input id="name" name="name" tabindex="1" aria-required="true" required="" type="text" placeholder="User name" /></fieldset>
-                               <fieldset className="mb24"> <input id="showpassword" name="password" tabindex="2" aria-required="true"  type="password" placeholder="Password" required="" />
-                                <span className="btn-show-pass "><i className="far fa-eye-slash"></i></span></fieldset>
+                                <fieldset className="mb24"> <input id="showpassword" name="password" tabindex="2" aria-required="true" type="password" placeholder="Password" required="" />
+                                    <span className="btn-show-pass "><i className="far fa-eye-slash"></i></span></fieldset>
                                 <div className="forgot-pass-wrap">
                                     <label>Remember for 30 days
                                         <input type="checkbox" />
@@ -77,13 +77,13 @@ function Login(props) {
                                 </div>
                                 <button className="submit" type="submit">Login</button>
                             </form>
-                        
-                            
+
+
                         </div>
                     </div>
                 </div>
             </section>
-            
+
         </div>
     );
 }

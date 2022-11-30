@@ -1725,17 +1725,18 @@ a {
 }
 
 .story {
-    height: 700px;
-    // background-color: #3749E9;
-    padding: 100px 250px;
+    height: 600px;
+    // background-color: #19182098;
+    padding: 120px 250px;
     display: flex;
+    margin-bottom: 50px;
 }
 
 .story p {
     width: 850px;
     text-align: center;
     font-size: 17px;
-    margin: 100px 200px 0px 200px;
+    margin: 80px 200px 0px 200px;
     line-height: 200%;
 }
 

@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import CardModal from '../layouts/CardModal';
@@ -9,12 +9,12 @@ import { Link } from 'react-router-dom';
 
 
 Explore.propTypes = {
-    data : PropTypes.array,
+    data: PropTypes.array,
 };
 
 function Explore(props) {
 
-    const {data} = props;
+    const { data } = props;
 
     const [modalShow, setModalShow] = useState(false);
 
@@ -31,7 +31,7 @@ function Explore(props) {
         },
         {
             id: 3,
-            title: '디파이',
+            title: 'DeFi',
             item: 2,
         },
         {
@@ -39,33 +39,19 @@ function Explore(props) {
             title: '블록체인 개발',
             item: 6,
         },
-        {
-            id: 5,
-            title: 'MUSIC',
-            item: 7,
-        },
-        {
-            id: 6,
-            title: 'ABSTRACT',
-            item: 1,
-        },
-        {
-            id: 7,
-            title: '2D ARTS',
-            item: 3,
-        },
+
 
     ]);
     return (
         <section className="tf-section tf-explore tf-filter tf-center">
-                <div className="tf-container">
-                    <div className="row ">
-                        <div className="col-md-12">
-                            <div className="tf-heading style-2 wow fadeInUp">
-                                <h4 className="heading">Explore</h4>
-                            </div>
+            <div className="tf-container">
+                <div className="row ">
+                    <div className="col-md-12">
+                        <div className="tf-heading style-2 wow fadeInUp">
+                            <h4 className="heading">Explore</h4>
                         </div>
-                        <div className="col-md-12">
+                    </div>
+                    <div className="col-md-12">
                         <Tabs>
                             <TabList>
                                 {
@@ -73,7 +59,7 @@ function Explore(props) {
                                         <Tab key={idx.id}>{idx.title}</Tab>
                                     ))
                                 }
-                                
+
                             </TabList>
 
 
@@ -109,29 +95,29 @@ function Explore(props) {
                                                     </div>
                                                 ))
                                             }
-                                        
+
                                         </div>
                                     </TabPanel>
                                 ))
                             }
-                            
 
-                        </Tabs> 
-                        </div>
-                        <div className="col-md-12">
-                            <div className="btn-loadmore mt8 wow fadeInUp">
-                                <Link to="/explore-v1" className="tf-button loadmore style-4">Load more</Link>
-                            </div>
+
+                        </Tabs>
+                    </div>
+                    <div className="col-md-12">
+                        <div className="btn-loadmore mt8 wow fadeInUp">
+                            <Link to="/explore-v1" className="tf-button loadmore style-4">Load more</Link>
                         </div>
                     </div>
-
-
                 </div>
 
-                <CardModal 
-                    show={modalShow}
-                    onHide={() => setModalShow(false)} 
-                />
+
+            </div>
+
+            <CardModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
         </section>
     );
 }

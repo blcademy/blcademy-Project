@@ -1,7 +1,7 @@
-import img1 from "../images/img-contact-1.png";
-import img2 from "../images/product/product44.jpg";
-import img3 from "../images/test.png";
-import img4 from "../images/product/product46.jpg";
+import img1 from "../images/itemslide/b1.png";
+import img2 from "../images/itemslide/b2.png";
+import img3 from "../images/itemslide/b3.png";
+import img4 from "../images/itemslide/b4.png";
 import img11 from "../images/itemslide/sl1.jpg";
 import img6 from "../images/product/product49.jpg";
 import img7 from "../images/product/product50.jpg";
@@ -24,10 +24,10 @@ const dataExplore = [
   },
   {
     id: 2,
-    img: img11,
+    img: img2,
     avt: avt,
-    title: "Giulia Glur #32",
-    create: "@SolvadorDali",
+    title: "블록체인 비즈니스",
+    create: "@멋쟁이사자님",
     price: "1.56wETH",
     avt1: avt1,
     avt2: avt2,
@@ -37,8 +37,8 @@ const dataExplore = [
     id: 3,
     img: img3,
     avt: avt,
-    title: "Archetype #588",
-    create: "@SolvadorDali",
+    title: "Smart Contract",
+    create: "@멋쟁이사자님",
     price: "1.56wETH",
     avt1: avt1,
     avt2: avt2,
@@ -48,57 +48,15 @@ const dataExplore = [
     id: 4,
     img: img4,
     avt: avt,
-    title: "3DPunks #070",
-    create: "@SolvadorDali",
+    title: "NFT의 이해",
+    create: "@멋쟁이사자님",
     price: "1.56wETH",
     avt1: avt1,
     avt2: avt2,
     avt3: avt3,
   },
-  {
-    id: 5,
-    img: img1,
-    avt: avt,
-    title: "Angelic Nyan Cat",
-    create: "@SolvadorDali",
-    price: "1.56wETH",
-    avt1: avt1,
-    avt2: avt2,
-    avt3: avt3,
-  },
-  {
-    id: 6,
-    img: img1,
-    avt: avt,
-    title: "Sweet Baby #1",
-    create: "@SolvadorDali",
-    price: "1.56wETH",
-    avt1: avt1,
-    avt2: avt2,
-    avt3: avt3,
-  },
-  {
-    id: 7,
-    img: img7,
-    avt: avt,
-    title: "Sweet Baby #1",
-    create: "@SolvadorDali",
-    price: "1.56wETH",
-    avt1: avt1,
-    avt2: avt2,
-    avt3: avt3,
-  },
-  {
-    id: 8,
-    img: img8,
-    avt: avt,
-    title: "Sweet Baby #1",
-    create: "@SolvadorDali",
-    price: "1.56wETH",
-    avt1: avt1,
-    avt2: avt2,
-    avt3: avt3,
-  },
+
+
 ];
 
 export default dataExplore;

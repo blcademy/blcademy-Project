@@ -34,16 +34,16 @@ const menus = [
         links: "/dashboard ",
       },
 
-      {
-        id: 3,
-        sub: "Help Center",
-        links: "/help-center",
-      },
-      {
-        id: 4,
-        sub: "FAQ",
-        links: "/faqs",
-      },
+      // {
+      //   id: 3,
+      //   sub: "Help Center",
+      //   links: "/help-center",
+      // },
+      // {
+      //   id: 4,
+      //   sub: "FAQ",
+      //   links: "/faqs",
+      // },
       {
         id: 5,
         sub: "Connect Wallet",
