@@ -12,19 +12,25 @@
     }
     .content-inner {
         width: 100%;
+        display: block;
+        margin: auto;
         position: relative;
-        padding: 180px 470px;
+        padding: 130px 0px;
         text-align: center;
         @include desktop-1400 {
             width: 100%;
             padding-top: 0;
         }
         .heading {
-            color: var(--primary-color4);
-            max-width: 627px;
+            // color: var(--primary-color4);
+            // max-width: 700px;
             position: relative;
             z-index: 2;
-            margin-bottom: 10px;
+            margin: 0px auto;
+            display: block;
+            // color: transparent;
+            // text-shadow: 0 0 40px rgb(102, 117, 121);
+
             span {
                 color: #fff;
                 position: relative;
@@ -38,12 +44,12 @@
             }
         }
         .sub-heading {
-            max-width: 627px;
+            max-width: 410px;
             color: var(--primary-color4);
             font-size: 15.5px;
             font-weight: 700;
             line-height: 26px;
-            margin-bottom: 57px;
+            margin: 0px auto 37px auto;
         }
         .tf-button {
             margin-right: 8px;

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import { Navigation, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img1 from '../../assets/images/img-contact-1.png'
-
-import img2 from '../../assets/images/slider/slider-2.png'
+import img0 from '../../assets/images/mainTitle.png'
+// import img1 from '../../assets/images/img-contact-1.png'
+// import img2 from '../../assets/images/slider/slider-2.png'
 
 import 'swiper/scss';
 import 'swiper/scss/navigation';
@@ -40,32 +40,31 @@ function Banner01(props) {
 
                                             <div className="content-inner">
 
-                                                <h1 className="heading">
-                                                    BLCADEMY
-                                                </h1>
+                                                <img src={img0} alt="BLCADEMY" className="heading" />
+
                                                 <p className="sub-heading">{idx.desc}</p>
                                                 <div className="btn-slider ">
                                                     <Link to="/explore-v1" className="tf-button style-2">Explore now</Link>
                                                     <Link to="/create" className="tf-button style-3">Creat</Link>
                                                 </div>
                                             </div>
-                                            <div className="image">
-                                                {/* <div className="img-slider-main ani5"><img src={idx.img} alt="블카데미"/></div> */}
-                                                {/* <img src={img2} alt="블카데미" className="img-slider-2 ani4" /> */}
-                                                {/* <img src={img2} alt="블카데미" className="img-slider-3 ani5" /> */}
+                                            {/* <div className="image">
+                                               <div className="img-slider-main ani5"><img src={idx.img} alt="블카데미"/></div>
+                                               <img src={img2} alt="블카데미" className="img-slider-2 ani4" /> 
+                                               <img src={img2} alt="블카데미" className="img-slider-3 ani5" />
 
-                                                {/* <div className="current-bid "> */}
-                                                {/* <div className="title">Current bid</div> */}
-                                                {/* <div className="price">{idx.price}</div> */}
-                                                {/* </div> */}
-                                                {/* <div className="card-infor ani5"> */}
-                                                {/* <img src={idx.avt} alt="블카데미" /> */}
-                                                {/* <div className="inner "> */}
-                                                {/* <h6 className="name">{idx.name}</h6> */}
-                                                {/* <p className="author">{idx.tag}</p> */}
-                                                {/* </div> */}
-                                                {/* </div> */}
-                                            </div>
+                                               <div className="current-bid ">
+                                                <div className="title">Current bid</div>
+                                                <div className="price">{idx.price}</div>
+                                                </div>
+                                                <div className="card-infor ani5">
+                                                <img src={idx.avt} alt="블카데미" />
+                                                <div className="inner ">
+                                                <h6 className="name">{idx.name}</h6>
+                                                <p className="author">{idx.tag}</p>
+                                                </div>
+                                                </div>
+                                            </div> */}
                                         </div>
                                     </SwiperSlide>
 
