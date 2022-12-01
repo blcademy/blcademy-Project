@@ -21,7 +21,7 @@ import imgbf4 from '../assets/images/hb4.png'
 import imgbf5 from '../assets/images/hb5.png'
 import imgbf6 from '../assets/images/hb6.png'
 import imgR from '../assets/images/roadmap.png'
-import imging from '../assets/images/ing.png'
+/*import imging from '../assets/images/ing.png'*/
 import imgL from '../assets/images/line.png'
 
 import { Link } from 'react-router-dom';
