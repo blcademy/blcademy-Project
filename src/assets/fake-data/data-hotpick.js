@@ -31,6 +31,26 @@ import img28 from '../images/product/product18.jpg'
 import img29 from '../images/product/product19.jpg'
 import img30 from '../images/product/product20.jpg'
 import img31 from '../images/product/product21.jpg'
+import img32 from '../images/product/product1.jpg'
+import img33 from '../images/product/product22.jpg'
+import img34 from '../images/product/product23.jpg'
+import img35 from '../images/product/product24.jpg'
+import img36 from '../images/product/product25.jpg'
+import img37 from '../images/product/product26.jpg'
+import img38 from '../images/product/product27.jpg'
+import img39 from '../images/product/product28.jpg'
+import img40 from '../images/product/product29.jpg'
+import img41 from '../images/product/product30.jpg'
+import img42 from '../images/product/product31.jpg'
+import img43 from '../images/product/product43.jpg'
+import img44 from '../images/product/product44.jpg'
+import img45 from '../images/product/product45.jpg'
+import img46 from '../images/product/product46.jpg'
+import img47 from '../images/product/product47.jpg'
+import img48 from '../images/product/product48.jpg'
+import img49 from '../images/product/product49.jpg'
+import img50 from '../images/product/product50.jpg'
+
 import avt from '../images/author/author1.png'
 const dataHotpick = [
     {
@@ -282,8 +302,159 @@ const dataHotpick = [
         title: 'Bladiator #40',
         create: 'Audrey Diffuse',
         price : '0.0041'
-    }
-   
+    },
+    {
+        id: 32,
+        img: img32,
+        avt: avt,
+        title: 'Bladiator #41',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 33,
+        img: img33,
+        avt: avt,
+        title: 'Bladiator #42',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 34,
+        img: img34,
+        avt: avt,
+        title: 'Bladiator #43',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 35,
+        img: img35,
+        avt: avt,
+        title: 'Bladiator #44',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 36,
+        img: img36,
+        avt: avt,
+        title: 'Bladiator #45',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 37,
+        img: img37,
+        avt: avt,
+        title: 'Bladiator #46',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 38,
+        img: img38,
+        avt: avt,
+        title: 'Bladiator #47',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 39,
+        img: img39,
+        avt: avt,
+        title: 'Bladiator #48',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 40,
+        img: img40,
+        avt: avt,
+        title: 'Bladiator #49',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 41,
+        img: img41,
+        avt: avt,
+        title: 'Bladiator #50',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 42,
+        img: img42,
+        avt: avt,
+        title: 'Bladiator #1',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 43,
+        img: img43,
+        avt: avt,
+        title: 'Bladiator #2',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 44,
+        img: img44,
+        avt: avt,
+        title: 'Bladiator #3',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 45,
+        img: img45,
+        avt: avt,
+        title: 'Bladiator #4',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 46,
+        img: img46,
+        avt: avt,
+        title: 'Bladiator #5',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 47,
+        img: img47,
+        avt: avt,
+        title: 'Bladiator #6',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 48,
+        img: img48,
+        avt: avt,
+        title: 'Bladiator #7',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 49,
+        img: img49,
+        avt: avt,
+        title: 'Bladiator #8',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
+    {
+        id: 50,
+        img: img50,
+        avt: avt,
+        title: 'Bladiator #9',
+        create: 'Audrey Diffuse',
+        price : '0.0041'
+    },
 ]
 
 export default dataHotpick;

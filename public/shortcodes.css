@@ -6217,6 +6217,8 @@
 
 .tf-slider {
   position: relative;
+  height: 820px;
+
 }
 .tf-slider .img-slider-1 {
   position: absolute;

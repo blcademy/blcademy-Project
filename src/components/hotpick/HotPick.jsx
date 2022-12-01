@@ -33,7 +33,7 @@ function HotPick(props) {
         {
             id: 3,
             title: 'LEGION',
-            item: 1,
+            item: 25,
         },
         // {
         //     id: 4,
@@ -105,7 +105,7 @@ function HotPick(props) {
                                     <TabPanel key={idx.id}>
                                         <div className="row tf-filter-container wow fadeInUp">
                                             {
-                                                data.slice(idx.item).map(idx => (
+                                                data.slice(idx.item, idx.item + 25).map(idx => (
                                                     <div key={idx.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 tf-loadmore 3d cyber">
                                                         <div className="sc-product style2">
                                                             <div className="top">

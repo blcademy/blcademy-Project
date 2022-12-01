@@ -1724,28 +1724,166 @@ a {
     
 }
 
+
+//세계관 부분
 .story {
-    height: 600px;
-    // background-color: #19182098;
-    padding: 120px 250px;
+    height: 700px;
+    background-color: #0b0b0e98;
+    padding: 110px 475px;
     display: flex;
-    margin-bottom: 50px;
 }
 
-.story p {
-    width: 850px;
+.storyTxt  {
+    width: 550px;
+    height: 440px;
     text-align: center;
+    margin-right: 50px;
+    padding-top: 10px;
+}
+
+.storyTxt p {
     font-size: 17px;
-    margin: 80px 200px 0px 200px;
     line-height: 200%;
+    margin: 30px 0px;
 }
 
 .storyImg {
-    width: 750px;
+    width: 350px;
     display: inline;
-
-    margin-right: 100px;
+    height: 440px;
+    object-fit: cover;
+    margin-top: 20px;
 }
+
+//홀더베네핏
+.hdBenefit {
+    height: 850px;
+    padding: 100px 245px 120px 245px;
+}
+
+.bfTitle{
+    display: block;
+    margin: 30px auto 40px auto;
+    width: 570px;
+}
+
+.benefitC {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bfContent {
+    width: 700px;
+    height: 150px;
+    background-color: #262625;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.bfContent img {
+    margin: 0px 30px;
+}
+
+.bfContent ul {
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.bfContent p {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.bfContent:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.bfContent:last-child {
+    margin-bottom: 20px;
+}
+
+
+//로드맵 부분
+.roadMap {
+    height: 950px;
+    margin-bottom: 100px;
+    padding: 100px 245px;
+    position: relative;
+    // width: 100%;
+}
+
+.roadmapT {
+    display: block;
+    margin: auto;
+    width: 550px;
+    margin: 0px auto 40px auto;
+}
+
+.roadmapC {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.Lineimg {
+    position: absolute;
+    height: 550px;
+}
+
+.rmContent {
+    margin-bottom: 50px;
+    display: flex;
+    margin-right: 30px;
+}
+
+.rmCbox {
+    width: 450px;
+    height: 150px;
+    background-color: #a5a5a0;
+    color: #191820;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.rmCboxW {
+    width: 450px;
+    height: 150px;
+    background-color: #e2e2de;
+    color: #191820;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ing {
+    width: 16px;
+    height: 50px;
+    margin: 50px 10px 0px 0px;
+}
+
+.rmContent:nth-of-type(3n) {
+    margin-right: 0px;
+}
+
+.rmCbox > p, .rmCboxW > p  {
+    font-weight: 700;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    line-height: 150%;
+}
+
+.aos-animate {
+    transition-delay: .3s;
+}
+
 
 .is_dark {
     .home-1 {
@@ -1754,8 +1892,8 @@ a {
                 background: url('./assets/images/background/bg-home-1-dark.png') center center no-repeat ;
             }
             background: url('./assets/images/slider/BC_mainbg.png') no-repeat ;
-            background-size: 100% 100vh;
-
+            // background-size: 100% 100vh;
+            background-size: auto;
         }
 
         // .tf-slider {
