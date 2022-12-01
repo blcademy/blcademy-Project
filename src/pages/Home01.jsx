@@ -32,20 +32,20 @@ function Home01(props) {
         <div className="home-1">
             <div id='page'>
                 <Banner01 data={dataBanner} />
-
-                <div className="story">
-                    <div className="storyTxt">
-                        <img src={imgT} alt="King" />
-                        <p>아름답고 비옥한 땅 , 미지의 낙원 CRYPTOPIA<br />
-                            지혜롭고 인자한 CRYPTOPIA의 왕의 통치아래 , <br />평화로운 나날을 보내던 어느 날..<br />
-                            악의 세력 센트럴 머스크에게 침략을 당하고 , <br />가까스로 위기를 넘기지만
-                            CRYPTOPIA 왕은 혼수상태에 빠진다. <br />
-                            CRYPTOPIA의 충신 , 비앤장군은 <br />CRYPTOPIA를 지키기 위해 용사들을 모으는데 ..</p>
-                        <Link to="/create" className="tf-button style-2">Buy on OpenSea</Link>
+                <div className="worldview">
+                    <div className="story">
+                        <div className="storyTxt">
+                            <img src={imgT} alt="King" />
+                            <p>아름답고 비옥한 땅 , 미지의 낙원 CRYPTOPIA<br />
+                                지혜롭고 인자한 CRYPTOPIA의 왕의 통치아래 , <br />평화로운 나날을 보내던 어느 날..<br />
+                                악의 세력 센트럴 머스크에게 침략을 당하고 , <br />가까스로 위기를 넘기지만
+                                CRYPTOPIA 왕은 혼수상태에 빠진다. <br />
+                                CRYPTOPIA의 충신 , 비앤장군은 <br />CRYPTOPIA를 지키기 위해 용사들을 모으는데 ..</p>
+                            <Link to="/create" className="tf-button style-2">Buy on OpenSea</Link>
+                        </div>
+                        <img src={img00} alt="King" className="storyImg" />
                     </div>
-                    <img src={img00} alt="King" className="storyImg" />
                 </div>
-
                 {/* 베네핏 */}
                 <div className='hdBenefit'>
                     <img src={imgbf} alt="benefit" className='bfTitle' />
@@ -184,7 +184,7 @@ function Home01(props) {
 
                 {/* <Category data={dataCategory} /> */}
 
-                <Create data={dataCreate} />
+                {/* <Create data={dataCreate} /> */}
 
 
                 <Explore data={dataExplore} />

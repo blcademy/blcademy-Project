@@ -1726,11 +1726,16 @@ a {
 
 
 //세계관 부분
-.story {
+.worldview {
     height: 700px;
     background-color: #0b0b0e98;
-    padding: 110px 475px;
+    padding: 110px 0px;
+}
+
+.story {
     display: flex;
+    width: 950px;
+    margin: auto;
 }
 
 .storyTxt  {
@@ -1739,6 +1744,7 @@ a {
     text-align: center;
     margin-right: 50px;
     padding-top: 10px;
+    //background-color: #48BC65;
 }
 
 .storyTxt p {
@@ -1751,14 +1757,15 @@ a {
     width: 350px;
     display: inline;
     height: 440px;
-    object-fit: cover;
     margin-top: 20px;
 }
 
 //홀더베네핏
 .hdBenefit {
     height: 850px;
-    padding: 100px 245px 120px 245px;
+    width: 1410px;
+    padding: 100px 0px 120px 0px;
+    margin: auto;
 }
 
 .bfTitle{
@@ -1810,10 +1817,10 @@ a {
 //로드맵 부분
 .roadMap {
     height: 950px;
-    margin-bottom: 100px;
-    padding: 100px 245px;
+    margin: 0px auto 100px auto;
+    padding: 100px 0px;
     position: relative;
-    // width: 100%;
+    width: 1410px;
 }
 
 .roadmapT {

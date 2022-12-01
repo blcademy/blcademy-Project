@@ -49,16 +49,16 @@ const menus = [
         sub: "Connect Wallet",
         links: "/wallet",
       },
-      {
-        id: 6,
-        sub: "Login",
-        links: "/login",
-      },
-      {
-        id: 7,
-        sub: "Sign Up",
-        links: "/signup",
-      },
+      // {
+      //   id: 6,
+      //   sub: "Login",
+      //   links: "/login",
+      // },
+      // {
+      //   id: 7,
+      //   sub: "Sign Up",
+      //   links: "/signup",
+      // },
     ],
   },
   {
