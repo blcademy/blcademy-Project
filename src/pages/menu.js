@@ -25,14 +25,14 @@ const menus = [
   },
   {
     id: 4,
-    name: "Pages",
-    links: "#",
-    namesub: [
-      {
-        id: 1,
-        sub: "Dashboard ",
-        links: "/dashboard ",
-      },
+    name: "Dashboard ",
+    links: "/dashboard ",
+    // namesub: [
+    //   {
+      //   id: 1,
+      //   sub: "Dashboard ",
+      //   links: "/dashboard ",
+      // },
 
       // {
       //   id: 3,
@@ -44,11 +44,11 @@ const menus = [
       //   sub: "FAQ",
       //   links: "/faqs",
       // },
-      {
-        id: 5,
-        sub: "Connect Wallet",
-        links: "/wallet",
-      },
+      // {
+      //   id: 5,
+      //   sub: "Connect Wallet",
+      //   links: "/wallet",
+      // },
       // {
       //   id: 6,
       //   sub: "Login",
@@ -59,7 +59,7 @@ const menus = [
       //   sub: "Sign Up",
       //   links: "/signup",
       // },
-    ],
+    // ],
   },
   {
     id: 5,
