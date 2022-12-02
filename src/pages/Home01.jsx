@@ -23,6 +23,7 @@ import imgbf6 from '../assets/images/hb6.png'
 import imgR from '../assets/images/roadmap.png'
 /*import imging from '../assets/images/ing.png'*/
 import imgL from '../assets/images/line.png'
+import complete from '../assets/images/complete.png'
 
 import { Link } from 'react-router-dom';
 
@@ -106,6 +107,7 @@ function Home01(props) {
                             data-aos-duration="500" >
                             <div className='rmCbox' >
                                 <p>NFT 민팅 & 블카데미 커뮤니티 오픈</p>
+                                <span><img src={complete} className='complete' /></span>
                             </div>
                         </div>
 
