@@ -15,8 +15,119 @@ import ico1 from '../assets/images/icon/rain1.svg'
 import ico2 from '../assets/images/icon/rain2.svg'
 import ico3 from '../assets/images/icon/ethe.png'
 import avt from '../assets/images/author/author1.png'
+/* 오류나면 
+import { Web3ReactProvider } from "@web3-react/core";
+import { Web3Provider } from "@ethersproject/providers";
 
+const getLibrary = (provider: any) => {
+  console.log("[getLibrary] provider", provider);
+  return new Web3Provider(provider);
+};
 
+ReactDOM.render(
+  <React.StrictMode>
+    <Web3ReactProvider>
+      <RecoilRoot>
+        <ThemeProvider theme={{}}>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ThemeProvider>
+      </RecoilRoot>
+    </Web3ReactProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+reportWebVitals();
+여기까지 지우기 */
+/*
+const handleMint = (address: string) => {
+    const abi = [
+      {
+        inputs: [{ internalType: "uint256", name: "count", type: "uint256" }],
+        name: "mint",
+        outputs: [],
+        stateMutability: "nonpayable",
+        type: "function",
+      },
+    ];
+    const contractInstance = new ethers.Contract(address, abi);
+      
+  };
+
+  import { useWeb3React } from "@web3-react/core";
+  import { Injected } from "App";
+  
+  const Page = () => {
+    const theme = useTheme();
+    const { activate, deactivate, account, chainId } = useWeb3React();
+    const [isMinting, setIsMinting] = useState(false);
+    
+    const handleConnect = () => {
+      if ((window as any).ethereum === undefined) {
+        window.open(
+          `https://metamask.app.link/dapp/${window.location.host}`,
+          "_blank"
+        );
+        return;
+      }
+      if (active && account) {
+        deactivate();
+      }
+      activate(Injected);
+    }
+    const handleMint = async (address: string) => {
+      const abi = [
+        {
+          inputs: [{ internalType: "uint256", name: "count", type: "uint256" }],
+          name: "mint",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+      ];
+      const contractInstance = new ethers.Contract(address, abi);
+      const data = await contractInstance.populateTransaction.mint(1);
+      setIsMinting(true);
+      const signer = library.getSigner(); // 잠금해제된 계정을 받아왔다.
+      const signedTransaction = await signer.sendTransaction(data);
+      // 잠금해제된 계정으로, 아까의 트랜잭션 구조 객체를 담아서 트랜잭션을 전송한다.
+      let reciept = await signedTransaction.wait();
+      console.log("reciept", reciept);
+      setIsMinting(false);
+    };
+  
+    
+    return (
+      <Container>
+        <StyledSampleDiv theme={theme}>
+          <Typography variant="h4" color={theme.colors.gray[1000]}>
+            Account: {account}
+          </Typography>
+          <Typography variant="h4" color={theme.colors.gray[1000]}>
+            chainId: {chainId}
+          </Typography>
+          <Button onClick={handleConnect}>
+            {active ? "연결 해제" : "지갑 연결하기"}
+          </Button>
+          <Button
+            onClick={() => handleMint(constants.CONTRACT_ADDRESS)}
+            color="primary"
+            disabled={isMinting === true}
+            isLoading={isMinting}
+          >
+            Minting
+          </Button>
+        </StyledSampleDiv>
+      </Container>
+    );
+  };
+  
+  export default Page;
+
+ */
+console.log("data", data);
 Create.propTypes = {
 
 };
