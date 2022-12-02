@@ -42,59 +42,40 @@ function Wallet(props) {
     {
       id: 1,
       img: icon1,
-      cate: "",
+      cate: "none",
       title: "Meta Mask",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
+      text: "MetaMask는 Ethereum 블록 체인과 상호 작용하는 데 사용되는 소프트웨어 암호 화폐 지갑입니다.",
     },
     {
       id: 2,
       img: icon2,
-      cate: "none",
+      cate: "",
       title: "Bitski",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
+      text: "Bitski는 고유한 하드웨어 암호화 키 저장 솔루션 및 주류 채택을 위해 설계된 통합인증 사용자 지갑입니다. ",
     },
     {
       id: 3,
       img: icon3,
       cate: "",
       title: "Wallet Connect",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
+      text: "월렛 커넥트는 여러 개의 분산 금융(DeFi) DApp 애플리케이션에 쉽게 연결할 수 있도록 하는 많은 암호화 지갑에서 사용하는 프로토콜입니다.",
     },
     {
       id: 4,
       img: icon4,
-      cate: "none",
-      title: "Coin Base",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
-    },
-    {
-      id: 5,
-      img: icon5,
       cate: "",
-      title: "Authereum",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
+      title: "Coin Base",
+      text: "코인베이스 지갑은 암호화폐와 NFT, DeFi 활동, 디지털 자산을 직접 관리하도록 돕는 자가 수탁형 모바일 암호화폐 지갑입니다.",
     },
+
     {
       id: 6,
       img: icon6,
       cate: "",
       title: "Kaikas",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
+      text: "Kaikas(카이카스)는 PC 웹 브라우저 확장 프로그램 형태의 글로벌 디지털 자산 지갑입니다.",
     },
-    {
-      id: 7,
-      img: icon7,
-      cate: "none",
-      title: "Torus",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
-    },
-    {
-      id: 8,
-      img: icon8,
-      cate: "",
-      title: "Fortmatic",
-      text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
-    },
+  
   ]);
   return (
     <div>

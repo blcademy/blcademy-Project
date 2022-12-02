@@ -126,8 +126,8 @@ const handleMint = (address: string) => {
   
   export default Page;
 
- */
-console.log("data", data);
+
+console.log("data", data); */
 Create.propTypes = {
 
 };
