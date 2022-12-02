@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+import Web3 from "web3";
+import { MINT_NFT_ABI, MINT_NFT_CONTRACT } from "../web3.config";
+
 import icon1 from "../assets/images/svg/icon-wallet-1.svg";
 import icon2 from "../assets/images/svg/icon-wallet-2.svg";
 import icon3 from "../assets/images/svg/icon-wallet-3.svg";
@@ -14,6 +17,27 @@ import { Link } from "react-router-dom";
 Wallet.propTypes = {};
 
 function Wallet(props) {
+  const [account, setAccount] = useState();
+
+
+
+ 
+  const getAccount = async () => {
+    //계정 가져오기
+    try {
+      if (window.ethereum) {
+        const accounts = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
+        setAccount(accounts[0]);
+      } else {
+        alert("Install MetaMask!");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   const [dataWallet] = useState([
     {
       id: 1,
@@ -96,14 +120,14 @@ function Wallet(props) {
               <div className="tf-heading style-5">
                 <h4 className="heading">Connect Your Wallet</h4>
                 <p className="sub-heading">
-                  {" "}
+            
                   블카데미는 아래와 같은 툴의 지갑연동을 제공해요{" "}
                 </p>
               </div>
             </div>
             {dataWallet.map((idx) => (
               <div key={idx.id} className="col-lg-4 col-md-6">
-                <div className="tf-wallet">
+                <div className="tf-wallet" onClick={getAccount}>
                   <div className="icon">
                     <img src={idx.img} alt="Binasea" />
                     <span className={`label ${idx.cate}`}>BETA</span>
